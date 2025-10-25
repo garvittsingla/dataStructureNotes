@@ -13,4 +13,34 @@ This can be simplified by recursion tree and exaplained through it in detail
 ---
 
 ![Stack image](./images/stack.png)
-### *Figure: This shows the stack calls of a recursive function*
+### `*Figure: This shows the stack calls of a recursive function*
+
+#### In file we have make a recursive function to print 10 times and its recursion tree looks like this:
+```scss
+print(10)
+ ├── print(9)
+ │    ├── print(8)
+ │    │    ├── print(7)
+ │    │    │    ├── print(6)
+ │    │    │    │    ├── print(5)
+ │    │    │    │    │    ├── print(4)
+ │    │    │    │    │    │    ├── print(3)
+ │    │    │    │    │    │    │    ├── print(2)
+ │    │    │    │    │    │    │    │    ├── print(1)
+ │    │    │    │    │    │    │    │    │    └── print(0)
+ │    │    │    │    │    │    │    │    └── return
+ │    │    │    │    │    │    │    └── return
+ │    │    │    │    │    │    └── return
+ │    │    │    │    │    └── return
+ │    │    │    │    └── return
+ │    │    │    └── return
+ │    │    └── return
+ │    └── return
+ └── return
+
+```
+ 
+> ### when one calls finish and returned then only the function gets exited 
+> ### Like here the print 0 call will return and then at last the print 10 call will be completed
+
+## Recursive relation
