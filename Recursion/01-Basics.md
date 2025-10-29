@@ -44,3 +44,9 @@ print(10)
 > ### Like here the print 0 call will return and then at last the print 10 call will be completed
 
 ## Recursive relation
+### Space complexity 
+All the function calls are stored in stack so, the space took by them will be the space complexity of our algorithm, but they all of them will not be in stack frame at the same time, they will be at some or other time. 
+
+The space complexity will be from root of the recurssion to the leaf of it 
+
+> Space comlpexity - Height of the tree
