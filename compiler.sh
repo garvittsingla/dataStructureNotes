@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 echo "Compiling the specified Programme..."
 #Only getting the first argument
