@@ -18,7 +18,7 @@ IterableStack<int> insertatbottom(IterableStack<int> st,int value){
     return st;
 }
 IterableStack<int> reverse(IterableStack<int> st){
-    if(st.empty()) return st;
+    if(st.empty) return st;
     int value = st.top();
     st.pop();
     st = insertatbottom(st,value);
