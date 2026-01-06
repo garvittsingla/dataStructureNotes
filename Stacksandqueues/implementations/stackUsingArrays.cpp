@@ -23,12 +23,26 @@ class MyStack{
         arr[++top] = x;
         }
         int pop() {
-        if (isEmpty()) {
+        if (top<0) {
             cout << "Stack is empty" << endl;
             // Return invalid value
             return -1; 
         }
         return arr[top--];
     }
+        int peek() {
+        if (top<0) {
+            cout << "Stack is empty" << endl;
+            return -1; 
+        }
+        return arr[top];
+        }
+        bool isEmpty() {
+        return top<0;
+        }
+        int size() {
+        return top + 1;
+        }
+
 
 };
