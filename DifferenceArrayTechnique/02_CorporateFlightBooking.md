@@ -12,6 +12,7 @@ diff =   [5,  10,   3,  -10,  -3]
 ```
 
 We just add the tickets and nullify their effect on end + 1
+Iterate over the bookings and add the ticket on start index and nullify the effect on end + 1. 
 ```cpp
  vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {
         //diff array technique
