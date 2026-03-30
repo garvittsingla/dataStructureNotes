@@ -18,7 +18,7 @@ filepath="$1"
 filename=$(basename "$filepath" .cpp)
 dir=$(dirname "$filepath")
 
-g++-15 "$filepath" -o "$dir/$filename.exe"
+g++ "$filepath" -o "$dir/$filename.exe"
 
 if [ $? -eq 0 ]; then
     echo "✓ Compilation successful: $dir/$filename.exe"
