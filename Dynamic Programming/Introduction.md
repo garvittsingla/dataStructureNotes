@@ -72,6 +72,10 @@ public:
 #### Tabulation
 We avoid recursion , and only take the space is called tabulation
 The first row and col can be considered as seeding or the base case for iterative approach
+
+
+
+> Pehle I items mein se choose karke, w weight limit ke andar max value kya h 
 ```cpp
 class Solution {
   public:
