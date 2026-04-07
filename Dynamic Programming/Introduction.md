@@ -79,29 +79,29 @@ class Solution {
         int n = wt.size();
     vector<vector<int>> dp(W + 1, vector<int>(n + 1));
 
-    for (int i = 0; i <= W; i++)
-        {
-            for (int j = 0; j <= n; j++)
-            {
-                if (i == 0 || j == 0)
-                {
-                    dp[i][j] = 0;
-                }
-                else if (wt[j - 1] <= i)
-                {
-                    int pick = val[j - 1] + dp[i - wt[j - 1]][j - 1];
-                    int non_pick = dp[i][j - 1];
+    int n = wt.size();
     
-                    dp[i][j] = max(pick, non_pick);
-                }
-                else
-                {
-                    dp[i][j] = dp[i][j - 1];
+            vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));
+    
+            for (int i = 0; i <= n; i++) {          // items
+                for (int w = 0; w <= W; w++) {      // capacity
+    
+                    if (i == 0 || w == 0) {
+                        dp[i][w] = 0;
+                    }
+                    else if (wt[i - 1] <= w) {
+                        int pick = val[i - 1] + dp[i - 1][w - wt[i - 1]];
+                        int not_pick = dp[i - 1][w];
+    
+                        dp[i][w] = max(pick, not_pick);
+                    }
+                    else {
+                        dp[i][w] = dp[i - 1][w];
+                    }
                 }
             }
-        }
-
-        return dp[W][n];
+    
+            return dp[n][W];
     }
 };
 ```
