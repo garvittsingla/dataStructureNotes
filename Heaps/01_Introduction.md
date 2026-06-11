@@ -2,6 +2,11 @@
 Heap is a complete binary tree based data structure
 > Nodes always are aligned/added from the left
 
+
+## Time complexity
+It gives the smallest or the largest element in O(1) time
+We want the root to be max, but the remaining array can be unsorted as well
+
 ## Types of heap
 1. Max heap -> Child always smaller than parent
 2. Min heap -> Child always greater than parent

@@ -5,7 +5,7 @@ class maxHeap{
     public:
         int arr[100];
         int size =0 ;
-        //find the parent of the node, check if it is smaller , if yes just wsap it
+        //find the parent of the node, check if it is smaller , if yes just swap it
         void insert(int val){
 
             size++;
