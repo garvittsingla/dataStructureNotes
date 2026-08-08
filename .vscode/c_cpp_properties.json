@@ -1,9 +1,9 @@
 {
   "configurations": [
     {
-      "name": "mac-gcc",
+      "name": "mac-g++",
       "compilerPath": "/opt/homebrew/bin/g++-15",
-      "intelliSenseMode": "macos-gcc-arm64",
+      "intelliSenseMode": "macos-g++-arm64",
       "cppStandard": "gnu++17",
       "cStandard": "gnu11"
     }

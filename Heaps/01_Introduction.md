@@ -6,6 +6,9 @@ Heap is a complete binary tree based data structure
 ## Time complexity
 It gives the smallest or the largest element in O(1) time
 We want the root to be max, but the remaining array can be unsorted as well
+To add a element , the worst time will be O(logN)
+To make a heap it and every element in a array , TC is O(logN)
+<!-- TODO: what is heapify? --> O(N)
 
 ## Types of heap
 1. Max heap -> Child always smaller than parent
@@ -25,4 +28,4 @@ Some important points:
 - Swap the last node with the first one, then heapify
 
 ## Heapify algorithm
-Taking a node to its correct index is the work of this algo
+Taking a node to its correct index is the work of this algo on a existing array
